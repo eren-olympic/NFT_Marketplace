@@ -6,7 +6,7 @@ import { CircleButton, RectButton } from './Button';
 import { SubInfo, EthPrice, NFTTitle } from './SubInfo';
 
 const NFTCard = ({ data }) => {
-  const navitation = useNavigation();
+  const navigation = useNavigation();
 
   return (
     <View style={{
@@ -52,7 +52,7 @@ const NFTCard = ({ data }) => {
             <RectButton
               mintWidth={120}
               fontSize={SIZES.font}
-              handlePress={() => navigation.navigate("Details", {data})}
+              handlePress={() => navigation.navigate("Details", { data })}
             />
           </View>
 
